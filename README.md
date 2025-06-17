@@ -138,4 +138,4 @@ MIT License. You are free to use, modify, and distribute this software. Attribut
 
 ## Citation
 If you use this tool in a publication, please cite:  
-Fajardo, J. & GPT-4o (2025). *Tile Miner: A Visual Framework for Nucleotide Layout Analysis*. Zenodo. DOI: [TBD after upload]
+Fajardo, J. (2025). *Tile Miner: A Visual Framework for Nucleotide Layout Analysis*. Zenodo. DOI: [TBD after upload]

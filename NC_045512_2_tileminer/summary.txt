@@ -1,0 +1,20 @@
+Tile Miner Output Summary
+==========================
+Accession: NC_045512.2
+Name: Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+Length: 29903 bp
+Width: 40
+Pages: 15
+
+Accession: NC_045512.2
+Name: Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+Length: 29903 bp
+Width: 60
+Pages: 15
+
+Accession: NC_045512.2
+Name: Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+Length: 29903 bp
+Width: 80
+Pages: 15
+

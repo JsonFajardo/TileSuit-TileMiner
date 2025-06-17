@@ -3,7 +3,7 @@
 **Author**: Jason Fajardo  
 **License**: MIT  
 **Version**: 1.0  
-**Repository**: [optional GitHub or Zenodo link]
+**Repository**:
 
 ---
 

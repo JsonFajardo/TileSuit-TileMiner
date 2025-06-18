@@ -97,6 +97,7 @@ tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 - `sort`: Search result order (see below)
 
 ** `sort` Options for `tile_fetch_batch()`**
+
       - "relevance" (default)  
       - "date"  
       - "submit_date"  

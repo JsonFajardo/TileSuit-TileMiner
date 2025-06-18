@@ -54,7 +54,7 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 tile_miner("NM_001101.5")
 
 
-### Batch Query Example
+#### Batch Query Example
 
 tile_miner(
   query = "actin[Title] AND Homo sapiens[Organism] AND biomol_mrna[PROP]",
@@ -67,18 +67,18 @@ tile_miner(
 )
 
 
-### Other Examples
+#### Other Examples
 
-# Long RNA viral genome with multiple widths
+**Long RNA viral genome with multiple widths**
 
 tile_miner("NC_045512.2", widths = c(40, 60, 80), bases_per_page = 2000)
 
-# Bacterial gene with genomic source and length limits
+**Bacterial gene with genomic source and length limits**
 
 tile_miner("rpoB[Gene] AND Escherichia coli[Organism] AND biomol_genomic[PROP]", 
            widths = 70, max_results = 3, min_length = 5000)
 
-# Intentional no-hit query to test error handling
+**Intentional no-hit query to test error handling**
 
 tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 
@@ -96,7 +96,7 @@ tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 - `verbose`: Print progress messages (TRUE/FALSE)  
 - `sort`: Search result order (see below)  
 
-### Sort Options for `tile_fetch_batch()`
+#### Sort Options for `tile_fetch_batch()`
 - "relevance" (default)  
 - "date"  
 - "submit_date"  

@@ -7,7 +7,7 @@
 
 ---
 
-**Acknowledgments:**
+## **Acknowledgments:**
 This tool uses data and services provided by the National Center for Biotechnology Information (NCBI), including the Entrez and BLAST APIs. We acknowledge the invaluable role of NCBI in supporting open bioinformatics research.
 
 For more information, see: https://www.ncbi.nlm.nih.gov
@@ -49,7 +49,7 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 
 ## Usage
 
-### Single Accession Example
+#### Single Accession Example
 
 tile_miner("NM_001101.5")
 

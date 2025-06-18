@@ -21,6 +21,8 @@ reshape2
 
 We acknowledge the authors and maintainers of these packages for their contributions to open-source science.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15670844.svg)](https://doi.org/YOUR_DOI_ID)
+
 ## Overview
 Tile Miner is an R-based tool for generating checker-style tile plots from nucleotide sequences. Each sequence is fetched from NCBI using either an accession number or an Entrez query, and is visualized in a grid layout where each base is assigned a tile. Layout width and coloring affect the visual emergence of patterns, enabling exploration of sequence structure.
 

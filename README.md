@@ -7,7 +7,7 @@
 
 ---
 
-##Acknowledgments:
+**Acknowledgments:**
 This tool uses data and services provided by the National Center for Biotechnology Information (NCBI), including the Entrez and BLAST APIs. We acknowledge the invaluable role of NCBI in supporting open bioinformatics research.
 
 For more information, see: https://www.ncbi.nlm.nih.gov
@@ -21,10 +21,10 @@ This project was developed in R and relies on the following packages:
 
 We acknowledge the authors and maintainers of these packages for their contributions to open-source science.
 
-> **Note on tool development:**  
-> The TileMiner program was conceptualized and directed by **Jason Fajardo**, with programming support provided through OpenAI's ChatGPT.  
-> All R code was generated collaboratively using ChatGPT as a coding assistant, under Jason’s supervision, testing, and refinement.  
-> This note is included for transparency and proper attribution of authorship roles.
+ **Note on tool development:**  
+ The TileMiner program was conceptualized and directed by **Jason Fajardo**, with programming support provided through OpenAI's ChatGPT.  
+ All R code was generated collaboratively using ChatGPT as a coding assistant, under Jason’s supervision, testing, and refinement.  
+ This note is included for transparency and proper attribution of authorship roles.
 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/10.5281/zenodo.15693621)

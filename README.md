@@ -94,14 +94,15 @@ tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 - `save_fasta`: Save each sequence as a `.fasta` file (TRUE/FALSE)  
 - `min_length`, `max_length`: Filter sequences by length (bp)  
 - `verbose`: Print progress messages (TRUE/FALSE)  
-- `sort`: Search result order (see below)  
-    **Sort Options for `tile_fetch_batch()`**
-     - "relevance" (default)  
-     - "date"  
-     - "submit_date"  
-     - "sequence_length"  
-     - "accn"  
-     - "source"  
+- `sort`: Search result order (see below)
+   
+     **Sort Options for `tile_fetch_batch()`**
+      - "relevance" (default)  
+      - "date"  
+      - "submit_date"  
+      - "sequence_length"  
+      - "accn"  
+      - "source"  
 
 ---
 

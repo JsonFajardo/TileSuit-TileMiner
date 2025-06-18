@@ -14,12 +14,18 @@ For more information, see: https://www.ncbi.nlm.nih.gov
 
 This project was developed in R and relies on the following packages:
 
-rentrez: for querying the NCBI Entrez API
-Biostrings: for DNA sequence manipulation and analysis
-ggplot2: for checker-style plotting
-reshape2
+- rentrez: for querying the NCBI Entrez API
+- Biostrings: for DNA sequence manipulation and analysis
+- ggplot2: for checker-style plotting
+- reshape2
 
 We acknowledge the authors and maintainers of these packages for their contributions to open-source science.
+
+> **Note on tool development:**  
+> The TileMiner program was conceptualized and directed by **Jason Fajardo**, with programming support provided through OpenAI's ChatGPT.  
+> All R code was generated collaboratively using ChatGPT as a coding assistant, under Jason’s supervision, testing, and refinement.  
+> This note is included for transparency and proper attribution of authorship roles.
+
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/10.5281/zenodo.15693621)
 

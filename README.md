@@ -51,36 +51,36 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 
 #### Single Accession Example
 
-tile_miner("NM_001101.5")
+  tile_miner("NM_001101.5")
 
 
 #### Batch Query Example
 
-tile_miner(
-  query = "actin[Title] AND Homo sapiens[Organism] AND biomol_mrna[PROP]",
-  widths = c(60, 80),
-  max_results = 5,
-  batch_size = 2,
-  bases_per_page = 5000,
-  min_length = 500,
-  sort = "relevance"
-)
+  tile_miner(
+    query = "actin[Title] AND Homo sapiens[Organism] AND biomol_mrna[PROP]",
+    widths = c(60, 80),
+    max_results = 5,
+    batch_size = 2,
+    bases_per_page = 5000,
+    min_length = 500,
+    sort = "relevance"
+  )
 
 
 #### Other Examples
 
 **Long RNA viral genome with multiple widths**
 
-tile_miner("NC_045512.2", widths = c(40, 60, 80), bases_per_page = 2000)
+  tile_miner("NC_045512.2", widths = c(40, 60, 80), bases_per_page = 2000)
 
 **Bacterial gene with genomic source and length limits**
-
-tile_miner("rpoB[Gene] AND Escherichia coli[Organism] AND biomol_genomic[PROP]", 
-           widths = 70, max_results = 3, min_length = 5000)
+  
+  tile_miner("rpoB[Gene] AND Escherichia coli[Organism] AND biomol_genomic[PROP]", 
+             widths = 70, max_results = 3, min_length = 5000)
 
 **Intentional no-hit query to test error handling**
 
-tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
+  tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 
 
 ---

@@ -21,7 +21,8 @@ reshape2
 
 We acknowledge the authors and maintainers of these packages for their contributions to open-source science.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/YOUR_DOI_ID)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/10.5281/zenodo.15693621)
+
 
 
 ## Overview

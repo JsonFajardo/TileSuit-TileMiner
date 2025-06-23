@@ -27,7 +27,7 @@ We acknowledge the authors and maintainers of these packages for their contribut
  This note is included for transparency and proper attribution of authorship roles.
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/10.5281/zenodo.15693621)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693621.svg)](https://doi.org/10.5281/zenodo.15717685)
 
 
 

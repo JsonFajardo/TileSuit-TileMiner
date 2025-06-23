@@ -3,7 +3,7 @@
 **Author**: Jason Fajardo  
 **License**: MIT  
 **Version**: 1.1.0  
-**Repository**:
+**Repository**: https://github.com/JsonFajardo/TileSuit-TileMiner
 
 ---
 

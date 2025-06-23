@@ -2,7 +2,7 @@
 
 **Author**: Jason Fajardo  
 **License**: MIT  
-**Version**: 1.0  
+**Version**: 1.1.0  
 **Repository**:
 
 ---
@@ -22,7 +22,7 @@ This project was developed in R and relies on the following packages:
 We acknowledge the authors and maintainers of these packages for their contributions to open-source science.
 
  **Note on tool development:**  
- The TileMiner program was conceptualized and directed by **Jason Fajardo**, with programming support provided through OpenAI's ChatGPT.  
+ The TileMiner program was conceptualized and directed by **Jason Fajardo**, with programming support provided through OpenAIs ChatGPT.  
  All R code was generated collaboratively using ChatGPT as a coding assistant, under Jason’s supervision, testing, and refinement.  
  This note is included for transparency and proper attribution of authorship roles.
 
@@ -34,6 +34,8 @@ We acknowledge the authors and maintainers of these packages for their contribut
 ## Overview
 Tile Miner is an R-based tool for generating checker-style tile plots from nucleotide sequences. Each sequence is fetched from NCBI using either an accession number or an Entrez query, and is visualized in a grid layout where each base is assigned a tile. Layout width and coloring affect the visual emergence of patterns, enabling exploration of sequence structure.
 
+Version 1.1 introduces support for **coordinate slicing** (visualizing subregions of a sequence) and **user-defined color schemes**, allowing custom visual encoding strategies.
+
 ---
 
 ## Features
@@ -44,6 +46,9 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 - Optional filters for sequence length.  
 - Adjustable layout widths and pagination.  
 - Supports sorting of search results.  
+- **NEW**: Optional `start` and `end` parameters for slicing a specific region.  
+- **NEW**: Customizable `color_scheme` argument for user-defined tile color encoding.  
+- **NEW**: Per-sequence `.meta` files with metadata for downstream reuse.
 
 ---
 
@@ -82,6 +87,13 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 
     tile_miner("unknown_gene[Gene] AND Homo sapiens[Organism]", max_results = 5)
 
+**Slicing a genome region**
+
+    tile_miner("NC_000913.3", start = 100000, end = 105000, widths = 50)
+
+**Custom color scheme usage**
+
+    tile_miner("NM_001101.5", widths = 60, color_scheme = c(A="#0000FF", T="#FF0000", G="#00FF00", C="#FFFF00"))
 
 ---
 
@@ -94,7 +106,9 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 - `save_fasta`: Save each sequence as a `.fasta` file (TRUE/FALSE)  
 - `min_length`, `max_length`: Filter sequences by length (bp)  
 - `verbose`: Print progress messages (TRUE/FALSE)  
-- `sort`: Search result order (see below)
+- `sort`: Search result order (see below)  
+- `start`, `end`: 1-based coordinates for region slicing (accession mode only)  
+- `color_scheme`: Optional named vector mapping bases to hex color codes  
 
   -`sort` Options for `tile_fetch_batch()`
 
@@ -111,6 +125,7 @@ Tile Miner is an R-based tool for generating checker-style tile plots from nucle
 Each run creates a folder containing:  
 - PNG images: One per width and page (e.g., NM_001101.5_w60_p1.png)  
 - FASTA files: Named as Accession_Gene.fasta if gene metadata exists  
+- `.meta` files: Per-sequence metadata stored in RDS format  
 - `summary.txt` and `summary.csv`: Overview of plot settings and sources  
 
 ---
@@ -130,15 +145,14 @@ You can combine filters using `AND`. Example:
 
 "p53[Gene] AND Homo sapiens[Organism] AND biomol_mrna[PROP]"
 
-
 ---
 
 ## Visualization Note
 Tile plots are highly dependent on:  
 - The layout width (columns)  
-- The tile colouring scheme 
+- The tile colouring scheme  
 
-Structural properties of sequences may become visible or obscured depending on how the sequence is folded into a grid.
+Structural properties of sequences may become visible or obscured depending on how the sequence is folded into a grid. Custom color schemes enable encoding of biological signals such as GC content or entropy.
 
 ---
 
